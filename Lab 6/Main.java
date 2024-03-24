@@ -17,9 +17,13 @@ public class Main {
         return password.toString();
     }
     public static void main(String[] args) {
-        int length = 7; // Довжина паролю
-        boolean includeUppercase = true; // Включити великі літери
+       int length = 8; // Довжина паролю
+        boolean includeUppercase = false; // Виключити великі літери
         String password = generatePassword(length, includeUppercase);
+        System.out.println("Згенерований пароль: " + password);
+        length = 7; // Довжина паролю
+        includeUppercase = true; // Включити великі літери
+        password = generatePassword(length, includeUppercase);
         System.out.println("Згенерований пароль: " + password);
     }
 }
